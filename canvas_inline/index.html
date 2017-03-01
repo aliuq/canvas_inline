@@ -1,0 +1,92 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML5 学习记录——在线画图板</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <header id="header">HTML5在线画图板</header>
+        <section id="content">
+            <div id="tools">
+                <ul id="toolsUl">
+                    <li class="toolModel">
+                        <h3>图像</h3>
+                        <hr>
+                        <ul class="ul1">
+                            <li id="save"><button>保存图片</button></li>
+                            <li id="clear"><button>清空画板</button></li>
+                        </ul>
+                    </li>
+                    <li class="toolModel">
+                        <h3>工具</h3>
+                        <hr>
+                        <ul id="tool_ul" class="tool_shape_ul">
+                            <li class="tool_brush"><img class="tool_brush" src="images/brush.png" alt="" /></li>
+                            <li class="tool_eraser"><img class="tool_eraser" src="images/eraser.png" alt="" /></li>
+                            <li class="tool_paint"><img class="tool_paint" src="images/paint.png" alt="" /></li>
+                            <li class="tool_dropper"><img class="tool_dropper" src="images/dropper.png" alt="" /></li>
+                            <li class="tool_text"><img class="tool_text" src="images/text.png" alt="" /></li>
+                            <li class="tool_magnifier"><img class="tool_magnifier" src="images/magnifier.png" alt="" /></li>
+                        </ul>
+                    </li>
+                    <li class="toolModel">
+                        <h3>形状</h3>
+                        <hr>
+                        <ul id="shape_ul" class="tool_shape_ul">
+                            <li class="shape_line"><img class="shape_line" class="shape_line" src="images/line.png" alt="" /></li>
+                            <li class="shape_arc"><img class="shape_arc" src="images/arc.png" alt="" /></li>
+                            <li class="shape_screen"><img class="shape_screen" src="images/screen.png" alt="" /></li>
+                            <li class="shape_poly"><img class="shape_poly" src="images/poly.png" alt="" /></li>
+                            <li class="shape_arcfill"><img class="shape_arcfill" src="images/arcfill.png" alt="" /></li>
+                            <li class="shape_rectangle"><img class="shape_rectangle" src="images/rectangle.png" alt="" /></li>
+                        </ul>
+                    </li>
+                    <li class="toolModel">
+                        <h3>线宽</h3>
+                        <hr>
+                        <ul id="line_width">
+                            <li class="line_1px"><img class="line_1px" src="images/line1px.png" alt="" /></li>
+                            <li class="line_3px"><img class="line_3px" src="images/line3px.png" alt="" /></li>
+                            <li class="line_5px"><img class="line_5px" src="images/line5px.png" alt="" /></li>
+                            <li class="line_8px"><img class="line_8px" src="images/line8px.png" alt="" /></li>
+                        </ul>
+                    </li>
+                    <li class="toolModel">
+                        <h3>颜色</h3>
+                        <hr>
+                        <ul id="color_ul">
+                            <li class="red"></li>
+                            <li class="green"></li>
+                            <li class="blue"></li>
+                            <li class="yellow"></li>
+                            <li class="white"></li>
+                            <li class="black"></li>
+                            <li class="pink"></li>
+                            <li class="purple"></li>
+                            <li class="orange"></li>
+                            <li class="cyan"></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div id="over">
+                <canvas id="canvas" width="1000" height="400">
+                    您的浏览暂不支持Canvas，请升级您的浏览器。
+                </canvas>
+            </div>
+        </section>
+        <div id="flag"></div>
+        <div id="photo">
+            <img id="img_save" width="600" height="400" src="" alt="">
+            <span id="close"><img src="images/icon_close.png" width="32" height="32" alt=""></span>
+        </div>
+        <footer id="footer">版权所有·侵权不究 &copy; CopyRight By linka</footer>
+        <script type="text/javascript" src="js/Canvas.js"></script>
+        <script type="text/javascript" src="js/ToolShapeFunc.js"></script>
+        <script type="text/javascript" src="js/ToolShape.js"></script>
+        <script type="text/javascript" src="js/lineWidth.js"></script>
+        <script type="text/javascript" src="js/Color.js"></script>
+    </body>
+</html>

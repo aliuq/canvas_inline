@@ -1,0 +1,135 @@
+* { padding: 0; margin: 0; list-style: none; }
+body{ background-color: #ABCDEF; }
+/*头部 Start*/
+#header{ 
+    font-size: 40px; 
+    width: 1000px; 
+    height: 100px; 
+    margin: 0 auto; 
+    text-align: center;
+    line-height: 100px;
+}
+/*头部 End*/
+
+/*内容模块 Start*/
+#content{ 
+    width: 1000px; 
+    height: 600px; 
+    background-color: #ccc; 
+    margin: 0 auto; 
+    padding: 10px;
+}
+/*工具栏 五个 Start*/
+#content #toolsUl { height: 200px; width: 1000px;}
+#content #toolsUl li.toolModel{ 
+    background-color:gray;
+    height: 190px; 
+    width: 199px;
+    float: left; 
+    border-right: 1px solid #000; 
+}
+/*工具栏 标题*/
+#toolsUl li h3{ text-align: center;padding: 5px; }
+
+/*图像下的样式*/
+#toolsUl li .ul1{ padding:30px; }
+#toolsUl li .ul1 li { list-style:square; padding-bottom:10px; }
+#toolsUl li .ul1 li button{ background: gray; border: 1px solid #000; }
+#toolsUl li .ul1 li button:hover{ border: 1px solid #fff; }
+
+/*工具和形状下的样式*/
+.tool_shape_ul{ padding: 30px 20px;}
+.tool_shape_ul li{ 
+    float: left; 
+    border: 1px solid dimgray; 
+    margin-right: 1px;
+    margin-bottom: 10px;
+    height: 30px; 
+    width: 50px; 
+    text-align: center; 
+}
+.tool_shape_ul li:hover{ border: 1px solid #fff; }
+.tool_shape_ul li img{ width: 35px; height: 25px;}
+
+/*线宽下的样式*/
+#line_width {padding:20px 30px}
+#line_width li{ padding-bottom: 5px; }
+#line_width li:hover{ border: 1px solid #fff; }
+#line_width li img{ width: 139px; }
+
+/*颜色下的样式*/
+#color_ul { padding: 30px 20px; }
+#color_ul li{ 
+    border: 2px solid #000; 
+    height:25px; 
+    width: 25px; 
+    float: left;
+    margin: 1px;
+    margin-bottom: 4px; 
+}
+#color_ul li:hover{ border: 2px solid #fff; }
+
+#color_ul .red{ background: red; }
+#color_ul .green{ background: green; }
+#color_ul .blue{ background: blue; }
+#color_ul .yellow{ background: yellow; }
+#color_ul .white{ background: white; }
+#color_ul .black{ background: black; }
+#color_ul .pink{ background: pink; }
+#color_ul .purple{ background: purple; }
+#color_ul .orange{ background: orange; }
+#color_ul .cyan{ background: cyan; }
+
+/*工具栏 五个 End*/
+
+
+
+/*画图板 Start*/
+/*画板溢出自适应 Start*/
+#content #over{ width: 1000px; height: 400px; overflow: auto; }
+/*画板溢出自适应 End*/
+
+#content #canvas{ background-color: #fff; }
+#content #canvas:hover{ cursor: crosshair; }
+/*画图板 End*/
+
+/*内容模块 End*/
+/* 保存图片 */
+#flag{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+#photo{
+    border: 1px solid #333;
+    background: #fff;;
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    left: 50%;
+    top: 50%;
+    margin-left:-300px;
+    margin-top: -200px;
+    display: none;
+    z-index: 99;
+}
+#photo span{
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+/*底部 Start*/
+#footer{ 
+    width: 1000px; 
+    height: 50px; 
+    margin: 0 auto; 
+    text-align: center;
+    padding-top: 15px;
+}
+/*底部 End*/
